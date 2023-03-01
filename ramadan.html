@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RAMADAN</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap');
+    * {
+      padding: 0%;
+      margin: 0px;
+      font-family: 'Markazi Text', serif;
+      color: goldenrod;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    body {
+    font-size: 13pt;
+    background: saddlebrown;
+}
+::placeholder{
+  color: saddlebrown;
+}
+input{
+  border: 2px darkgoldenrod solid;
+  margin-left: 8%;
+  height: 30px;
+  border-radius: 20px;
+  color: goldenrod;
+  width: 85%;
+}
+input:focus{
+  transform: scale(1.1);
+  height: 25px;
+}
+.conatiner{
+  width: 70%;
+  float: left;
+  margin-left: 15%;
+  margin-top: 15%;
+  border: 2px solid goldenrod;
+  border-radius: 20px;
+  box-shadow: -2px 22px 0px 8px darkgoldenrod;
+}
+
+h3{
+  text-align: center;
+  color: goldenrod;
+  font-weight: 18pt;
+  font-size: 30px;
+}
+h5{
+  text-align: center;
+  color: gold;
+  font-weight: 18pt;
+  font-size: 20px;
+}
+#submit:hover{
+  background: goldenrod;
+  color: white;
+}
+#submit{
+  width: 85%;
+  height: 30px;
+  margin-left: 8%;
+  margin-right: 9%;
+  background-color: #fff;
+  color: saddlebrown;
+  border: 1.2px goldenrod solid;
+  border-radius: 30px;
+}
+    .footer {
+      justify-content: space-between;
+      margin-top: 200px;
+      font-size: 10px;
+    }
+        a{
+      color: white;
+    }
+    a:hover{
+      color: gold;
+    }
+      header {
+        padding: 0 20px;
+        height: 60px;
+        font-size: 10px;
+        display: flex;
+        justify-content: space-around ;
+        align-items: center;
+        border-bottom: 1px white solid;
+      }
+      .div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+  </style>
+</head>
+<body>
+    <header>
+      <a href="add.html">متتبع الصلاوات</a>
+      <a href="el-azkar.html">الاذكار</a>
+      <a href="ramadan.html">رمضان</a>
+      <a href="el-sebha.html">التسابيح</a>
+      <a href="index.html">الرئيسية</a>
+      <h2>الطريق الي الجنة</h2>
+    </header>
+    <h6></h6>
+    <br>
+    <div class="div">
+      <h1>🌜</h1>
+      <h1>🌛</h1>
+    </div>
+  <div class="conatiner">
+    <h3>رمضان</h3>
+    <br>
+    <input type="text" name="name" id="name" placeholder="اكتب اسمك">
+    <br>
+    <button type="submit" id="submit" onclick="submit ()">!اضغط هنا</button>
+    <br>
+    <br>
+    <h5 id="answer"></h5>
+  </div>
+  <script>
+    function submit() {
+      let name = document.getElementById("name").value
+let a = document.getElementById("answer")
+  console.log(localStorage)
+a.textContent = " كل عام و انت بخير يا " + name + " 🌙🥳 رمضان قرب";
+}
+  </script>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <div class="footer">
+      <h4 style="color: white; margin-left: 120px;">©Copyright by Mohamed Waleed.</h4>
+    </div>
+</body>
+</html>

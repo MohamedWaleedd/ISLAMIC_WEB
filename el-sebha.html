@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>الطريق الي الجنة</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap');
+  *{
+padding: 0%;
+margin:0px;
+font-family: 'Markazi Text', serif;
+color: goldenrod;
+text-decoration: none;
+font-weight: 500;
+  }
+    body{
+      color: goldenrod;
+      background: saddlebrown;
+    }
+    .container{
+      margin-left: 120px;
+    }
+    a{
+      color: white;
+    }
+    a:hover{
+      color: gold;
+    }
+      header {
+        padding: 0 20px;
+        height: 60px;
+        font-size: 10px;
+        display: flex;
+        justify-content: space-around ;
+        align-items: center;
+        border-bottom: 1px white solid;
+      }
+      h1{
+       font-size: 50px;
+      }
+        .div{
+          background: goldenrod;
+          width: 350px;
+          height: 600px;
+          border-radius: 50px;
+          margin-top: 50px;
+          border: 1px black;
+          margin-left: 30px;
+        }
+        h3{
+          margin-left: 130px;
+        }
+        .c{
+          margin-left: 10px;
+        }
+  </style>
+</head>
+<body>
+   <header>
+     <a href="add.html">متتبع الصلاوات</a>
+     <a href="el-azkar.html">الاذكار</a>
+     <a href="ramadan.html">رمضان</a>
+     <a href="el-sebha.html">التسابيح</a>
+     <a href="index.html">الرئيسية</a>
+     <h2>الطريق الي الجنة</h2>
+   </header>
+   <h6></h6>
+   <br>
+   <div class="container">
+     <h1>التسابيح</h1>
+   </div>
+           <div class="div">
+             <br>
+             <div class="c">
+   <div style="color: royalblue; font-size: 55px; border: 1px black solid; background: lightgray; width: 300px; height: 100px; border-radius: 40px; margin-left: 10px;">
+     <h3 id="a">0</h3>
+     </div>
+             <br>
+ <input type="button" value="تسبيح" onclick="fun_1()" style="color:#008080;height: 60px;width:90%;margin-bottom:30px; font-size: 20px; color: black; border-radius: 30px; margin-left: 10px;">
+             <br>
+  <input type="button" value="اعاده" onclick="window.location.reload();" style="color: black;width: 90%;height:60px; font-size: 20px; border-radius: 30px; margin-left: 10px;">
+             </div>
+           </div>
+  <script>
+    var x = 0;
+           function fun_1(){   
+            x++;
+             window.a.innerHTML = x;
+           }
+  </script>
+</body>
+</html>

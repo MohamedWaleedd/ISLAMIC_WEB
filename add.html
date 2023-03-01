@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap');
+*{
+  padding: 0;
+  font-family: 'Markazi Text', serif;
+  margin: 0;
+  text-decoration: none;
+
+  font-weight: 500;
+ }
+.al-salawat{
+  font-size: 50px;
+  margin-left: 120px;
+}
+body{
+  background: saddlebrown;
+  color: goldenrod;
+}
+button{
+  background: none;
+  border: 2px goldenrod solid;
+  width: 200px;
+  height: 45px;
+  border-radius: 40px;
+  font-size: 30px;
+  margin-left: 130px;
+  color: goldenrod;
+  font-weight: 500;
+  margin-right: 500px;
+}
+button:hover{
+  background: goldenrod;
+  color: white;
+}
+input[type="checkbox"] {
+  width: 50px;
+  height: 50px;
+  background: goldenrod;
+}
+    a{
+      color: white;
+    }
+    a:hover{
+      color: goldenrod;
+    }
+    header{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 60px;
+    }
+    h6{
+      border-bottom: 1px white solid;
+    }
+    @media (max-width: 900px) {
+      header {
+        padding: 0 20px;
+        height: 60px;
+        font-size: 10px;
+      }
+      input[type="checkbox"] {
+        width: 50px;
+        height: 35px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="add.html">متتبع الصلاوات</a>
+    <a href="el-azkar.html">الاذكار</a>
+     <a href="ramadan.html">رمضان</a>
+    <a href="el-sebha.html">التسابيح</a>
+    <a href="index.html">الرئيسية</a>
+    <h2>الطريق الي الجنة</h2>
+  </header>
+<h6></h6>
+<div class="al-salawat">
+  <label for="al-fagr">الفجر</label>
+  <input type="checkbox" class="checkbox">
+  <br>
+<label for="al duher">الظهر</label>
+  <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
+  <br>
+  <label for="al asr">العصر</label>
+  <input type="checkbox">
+  <br>
+  <label for="al maghrep" id="m">المغرب</label>
+  <input type="checkbox" id="mm">
+  <br>
+  <label for="al eshaa">العشاء</label>
+  <input type="checkbox">
+</div>
+<button type="submit">FINISH</button>
+<br>
+<br>
+<script>
+let prayer_count = 0;
+const prayers = document.querySelectorAll(".al-salawat input[type='checkbox']");
+
+for (const prayer of prayers) {
+    prayer.addEventListener("change", function(){
+    if(this.checked){
+        prayer_count++;
+    }
+    else{
+        prayer_count--;
+    }
+    if(prayer_count === 5){
+        alert(" احسنت لقد اكملت كل الصلوات اليوم!!");
+        window.location.reload();
+    }
+    });
+}
+document.querySelector("button[type='submit']").addEventListener("click", function(){
+    alert(" عدد الصلوات التي صليتها" +   "(" + prayer_count + ")") ; 
+});
+
+</script>
+
+</body>
+</html>
